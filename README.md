@@ -1,4 +1,4 @@
-# SniMman Demo Applications
+# SnipMman Demo Applications
 
 This project was originally created to manage the projects I was working on
 as a contractor at Google in New York City. Version 1.0 of [SnipMan](snipManPython/snipManV1/)
