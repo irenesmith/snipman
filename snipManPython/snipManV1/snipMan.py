@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-from Tkinter import *
+from tkinter import *
 from datetime import *
 
 class SnippetManager(Tk):
