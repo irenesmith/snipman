@@ -21,3 +21,8 @@ to the file. The simple interface was created with TKinter.
 *Under development* - I'm in the process of updating SnipMan to use Pygame and
 Pygwidgets instead of the Tkinter interface library.
 
+## SnipMan VB version 1.0
+
+Performs the same functions as the original Python SnipMan using Visual Basic,
+.NET Core 6.0 and the Windows Forms library. I think the UI is cleaner looking
+than the interface using Tkinter.
