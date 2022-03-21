@@ -11,18 +11,22 @@ languages including the latest version of Python, C#, and JavaScript.
 Used to track completed tasks; a project to learn Python; this is my first
 Python application. It creates a text file to which "snippets" can be added.
 The file name is the date of the next Monday. If today is Mondy, the file
-will be dated with next Monday's date.
+will be dated with today's date.
 
 If a file with that name already exists, it will be opened to add new items
 to the file. The simple interface was created with TKinter.
-
-## SnipMan Python version 2.0
-
-*Under development* - I'm in the process of updating SnipMan to use Pygame and
-Pygwidgets instead of the Tkinter interface library.
 
 ## SnipMan VB version 1.0
 
 Performs the same functions as the original Python SnipMan using Visual Basic,
 .NET Core 6.0 and the Windows Forms library. I think the UI is cleaner looking
 than the interface using Tkinter.
+
+As with the Python version of SnipMan, this application calculates the date of
+the previous Monday. Instead of storing the file in the same folder as the
+application, it saves the file in the Documents folder. This is easy to do with
+.NET because the library includes an enumeration that gives access to standard
+system folders such as Documents and Downloads.
+
+If the file already exists, it is opened to add new items to the file. The
+interface for the VB.NET version uses the Windows Forms library.
