@@ -10,6 +10,9 @@ $(document).ready(function() {
     snippets.forEach(addToTable);
     monday = calcMonday();
 
+	// Insert Monday's date into the level 2 heading.
+	$('#monday-date').html(monday);
+
 	clearForm();
 });
 
@@ -21,8 +24,6 @@ function getSnippets() {
     snipList.push('Created VB SnipMan');
     snipList.push('Created JavaScript SnipMan');
     snipList.push('Creating jQuery back end.');
-
-    // TODO: Figure out how to load from a local file.
 
     // Return the list of snippts to the caller.
 	return snipList;
@@ -40,8 +41,7 @@ function addToList(aSnippet) {
 	snippets.push(aSnippet);
 
 	// Save the contents of the list
-    // TODO: Figure out how to save to a local file.
-	// setTodoList();
+	// to local storage.
 }
 
 $('#add-snippet').click(function() {
@@ -66,6 +66,16 @@ function clearForm() {
 }
 
 function calcMonday() {
-    var currentDate = Date.now;
-    var LastMonday = currentDate.toString();
+    var currentDate = new Date();
+	const weekDay = currentDate.getDay();
+	var monthDate = currentDate.getDate();
+
+	// Figure out how many days since Monday.
+	var adjustDays = weekDay - 1;
+	currentDate.setDate(monthDate - adjustDays);
+
+	// Last Monday represents the beginning of the week
+	// for which we are saving snippets.
+    var LastMonday = currentDate.toDateString();
+	return LastMonday;
 }
