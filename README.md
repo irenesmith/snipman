@@ -30,3 +30,14 @@ system folders such as Documents and Downloads.
 
 If the file already exists, it is opened to add new items to the file. The
 interface for the VB.NET version uses the Windows Forms library.
+
+## SnipMan JS version 1.0
+
+This is the JavaScript version of SnipMan.
+
+The UI for this application was created using the latest version of HTML and
+styled using Bootstrap 5.1.3 rather than a hand-coded design.
+
+The code uses jQuery to manage the list of snippets. To simplify the application,
+snippets are stored in local storage, meaning that the saved data is specific to
+a single computer.
